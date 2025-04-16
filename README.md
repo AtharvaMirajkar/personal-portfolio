@@ -74,6 +74,6 @@ This project is open-source and available under the **MIT License**.
 
 Project URL: https://roadmap.sh/projects/portfolio-website
 
----
 
-## Thank You ❤️
+
+# Thank You ❤️
