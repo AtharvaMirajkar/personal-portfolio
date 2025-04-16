@@ -63,7 +63,7 @@ By completing this project, I gained a solid understanding of:
 ## 🌐 Live Demo
 Check out the live version of this responsive website hosted on GitHub Pages:
 
-🔗 Click here to see the website
+🔗 [Click here to see the website]()
 
 💡 Note: The website adjusts to different screen sizes, so be sure to check it on both mobile and desktop views.
 
