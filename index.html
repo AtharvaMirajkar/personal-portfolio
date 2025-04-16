@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Developer Portfolio - Showcasing Projects and Work Experience">
+    <title>Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="a">
+                <div class="logo"></div>
+                <h3 id="name">Atharva Mirajkar</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="title">
+            <h1>Data Scientist</h1>
+            <p>Driven by Passion, Defined by Precision.</p>
+        </section>
+        
+        <div class="main-content">
+            <section class="projects"><br>
+                <h2 style="padding-left: 5px;">Projects</h2>
+                <ul>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="projects.html">Currency Converter</a></li>
+                    <li><a href="projects.html">Single Page CV</a></li>
+                    <li><a href="projects.html">Card Guessing Game</a></li>
+                    <li><a href="projects.html">Product Upcoming Page</a></li>
+                </ul>
+            </section>
+            
+            <section class="work-experience">
+                <br>
+                <h2 style="padding-left: 10px;">Work Experience</h2><br><br>
+                
+                <p style="padding-left: 10px;"><strong>roadmap.sh</strong></p><br>
+                <p style="padding-left: 10px;">Solved all the frontend projects</p><br>
+                <a href="https://roadmap.sh/u/athrv" style="padding-left: 10px;">Visit my Profile</a><br><br><hr><br>    
+                <p style="padding-left: 10px;"><strong>OpenSource Work</strong></p><br>
+                <p style="padding-left: 10px;">Contributed to many open-source projects.<br>Made my own projects on Github</p><br>
+                <a href="https://github.com/AtharvaMirajkar" style="padding-left: 10px;">Visit my GitHub Profile</a>
+            </section>
+            
+            <section class="education">
+                <br>
+                <h2>Education</h2>
+                <br>
+                <p>- Graduated with <b>86% out of 100%.</b></p>
+                <p>- Won a <b>Web Dev Hackathon.</b></p>
+                <p>- Organized a <b>TechFest</b> in my college.</p><br>
+                <h3>Courses I took:</h3><br>
+                <p>- Python Programming</p>
+                <p>- Statistics</p>
+                <p>- SQL </p>
+                <p>- Power BI</p>
+                <p>- Machine Learning</p>
+                <p>- Data Analytics</p>
+                <p>- Data Science</p>
+            </section>
+        </div>
+
+        <br><br>
+        <h2 style="padding-left: 20px;">Reviews from my Teachers</h2>
+        <section class="reviews">
+            <div class="review-box">
+                <p class="review-text">Atharva Mirajkar was a brilliant student; always stood out with his assignments.</p>
+                <em>Ms. Yapper<br>Assistant Professor</em>
+            </div>
+            <div class="review-box">
+                <p class="review-text">Atharva Mirajkar was a brilliant student; always stood out with his projects he made.</p>
+                <em>Ms. C. Sharma<br>HOD</em>
+            </div>
+            <div class="review-box">
+                <p class="review-text">Atharva Mirajkar was an extremely hard working student; We are proud of his commmendable performance. </p>
+                <em>Ms. R. Sharma<br>Principal</em>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; all rights reserved 2025</p>
+        </footer>
+    </div>
+
+    <!-- Responsive Hamburger Script -->
+    <script>
+        const hamburger = document.createElement('button');
+        hamburger.classList.add('hamburger');
+        hamburger.innerHTML = '&#9776;'; // ☰
+        document.querySelector('header').appendChild(hamburger);
+
+        hamburger.addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

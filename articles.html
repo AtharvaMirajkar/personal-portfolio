@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="a">
+        <div class="logo"></div>
+        <h3 id="name">Atharva Mirajkar</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
+        <h1>Articles Coming Soon ❤️</h1>
+    </div>
+    </div>
+    <script>
+        const hamburger = document.createElement('button');
+        hamburger.classList.add('hamburger');
+        hamburger.innerHTML = '&#9776;'; // ☰
+        document.querySelector('header').appendChild(hamburger);
+
+        hamburger.addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>  
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: black;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    padding: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title h1 {
+    font-size: 28px;
+}
+
+.title p {
+    font-size: 14px;
+    color: gray;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0px;
+    border: 1px solid black;
+}
+
+section {
+    padding: 0px;
+    min-height: 100px;
+}
+
+.projects {
+    border: 1px solid black;
+}
+
+.projects ul {
+    list-style: none;
+}
+
+.projects li {
+    font-size: small;
+    padding: 15px;
+    border: 0.3px solid black;
+}
+
+.projects li:nth-child(1) {
+    border-top: none;
+}
+
+.projects li:nth-child(5) {
+    border-bottom: none;
+}
+
+.projects li a {
+    text-decoration: none;
+    color: black;
+}
+
+.work-experience a {
+    text-decoration: none;
+    color: black;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.review-box {
+    border-radius: 10%;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+}
+
+.review-box p {
+    font-size: 14px;
+}
+
+.review-box em {
+    color: gray;
+    font-size: 12px;
+}
+
+.a {
+    display: flex;
+}
+
+#name {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.education {
+    border-left: 1px solid black;
+}
+
+/* ✅ Responsive Styles */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        border-top: 1px solid black;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-box {
+        width: 90%;
+    }
+}

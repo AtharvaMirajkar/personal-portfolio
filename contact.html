@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact page with developer's details">
+    <meta name="keywords" content="Contact, GitHub, LinkedIn, Developer, Profile">
+    <meta name="author" content="Atharva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: auto;
+            padding: 40px 0;
+            background-color: white;
+        }
+
+        .contact-card {
+            width: 550px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .contact-card h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .contact-card p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .contact-card a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            width: 550px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 600px) {
+    .contact-card,
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-wrapper {
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .contact-card h2,
+    .contact-form h2 {
+        font-size: 18px;
+    }
+
+    .contact-card p,
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 13px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="a">
+        <div class="logo"></div>
+        <h3 id="name">Atharva Mirajkar</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-wrapper">
+        <div class="contact-card">
+            <h2>Atharva Mirajkar</h2>
+            <p><strong>Phone:</strong><a href="tel:+919324464793"> +91 9324464793</a></p>
+            <p><strong>Email: </strong><a href="mailto:atharva.r.mirajkar@gmail.com"> atharva.r.mirajkar@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/AtharvaMirajkar" target="_blank">Atharva's Github</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mirajkar-atharva/" target="_blank">Atharva's Linkedin</a></p>
+            <p><strong>Location:</strong> Mumbai, Maharashtra, India</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mqapgykj" method="post">
+            <h2>Send me a Message 😊</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    </div>
+    <script>
+        const hamburger = document.createElement('button');
+        hamburger.classList.add('hamburger');
+        hamburger.innerHTML = '&#9776;'; // ☰
+        document.querySelector('header').appendChild(hamburger);
+
+        hamburger.addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
