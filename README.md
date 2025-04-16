@@ -47,8 +47,6 @@ By completing this project, I gained a solid understanding of:
 - **Using Flexbox** for dynamic and flexible layouts  
 - How to use **media queries** for adapting designs to different devices  
 - Best practices for **styling a website** using CSS  
-- How to use **Google Fonts** for better typography  
-- Applying a **color scheme** to ensure consistency across the website
 
 ---
 
@@ -63,7 +61,7 @@ By completing this project, I gained a solid understanding of:
 ## 🌐 Live Demo
 Check out the live version of this responsive website hosted on GitHub Pages:
 
-🔗 [Click here to see the website]()
+🔗 [Click here to see the website](https://atharvamirajkar.github.io/personal-portfolio/)
 
 💡 Note: The website adjusts to different screen sizes, so be sure to check it on both mobile and desktop views.
 
